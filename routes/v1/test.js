@@ -1,4 +1,4 @@
-import { routePrefix } from '../../configServer';
+import { routePrefixV1 } from '../../configServer';
 
 const path = require("path");
 
@@ -7,8 +7,8 @@ export const handlerFolderPath = path.join(__dirname, '../../app/controller/test
 export const  routes =[
     {
         method:"get",
-        endpoint:"/",
+        endpoint:"",
         handler:"simpleTest",
-        routePrefix: routePrefix,
+        routePrefix: routePrefixV1.openroute,
     }
 ]
